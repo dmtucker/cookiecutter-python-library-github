@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+    "setuptools ~= 61.0",
+    "setuptools-scm[toml] ~= 7.1",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{ cookiecutter.distribution_name }}"
+dynamic = ["version"]
+description = "{{ cookiecutter.project_description }}"
+readme = "README.md"
+license = {file = "LICENSE"}
+maintainers = [
+    {name = "{{ cookiecutter.maintainer_name }}", email = "{{ cookiecutter.maintainer_email }}"}
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+]
+requires-python = ">= 3.8"
+dependencies = [
+]
+
+[project.urls]
+homepage = "https://github.com/{{ cookiecutter.github_owner }}/{{ cookiecutter.github_repo_name }}"
+
+[tool.setuptools_scm]

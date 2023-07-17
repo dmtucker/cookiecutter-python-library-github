@@ -1,0 +1,11 @@
+{
+    "project_name": "My Project",
+    "project_description": "A Package Generated from cookiecutter-python-library-github",
+    "package_name": "{{ cookiecutter.project_name|replace(' ','_')|replace('-','_')|lower }}",
+    "distribution_name": "{{ cookiecutter.package_name|replace('_','-') }}",
+    "github_repo_name": "{{ cookiecutter.project_name|replace(' ','-')|lower }}",
+    "github_owner": "octocat",
+    "maintainer_name": "The Octocat",
+    "maintainer_email": "octocat@github.com",
+    "copyright_year": "{% now 'utc', '%Y' %}"
+}
